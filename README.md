@@ -1,49 +1,52 @@
 # Burger King
 
-Учебный React-проект: меню, корзина, профиль, купон.
+Учебный React-проект: меню, корзина, профиль, промокод.
 
 ## Быстрый старт
 
 ```bash
-cd burgerking-main
+git clone https://github.com/oneivan22/project3.git
+cd project3-main
 npm install
 npm run dev
 ```
 
 Открой `http://localhost:5174`
 
+## Команды
+
+```bash
+npm install        # Установить зависимости
+npm run dev        # Запустить локальный сервер разработки
+npm run build      # Собрать проект для продакшена
+npm run preview    # Просмотреть собранную версию локально
+npm run lint       # Проверить код через ESLint
+npm test           # Запустить unit-тесты (Jest)
+npm run deploy     # Развернуть сайт на GitHub Pages
+```
+
 ## Публикация на GitHub Pages
 
-1. Создай репозиторий на GitHub и добавь remote, например:
+Этот проект можно развернуть на GitHub Pages, используя скрипт `npm run deploy`.
 
-```bash
-git remote add origin https://github.com/<твое_имя>/<репозиторий>.git
-```
+Проверь настройки Pages в репозитории:
 
-2. Отправь код в GitHub:
+https://github.com/oneivan22/project3/settings/pages
 
-```bash
-git push -u origin main
-```
+Возможно, нужно выбрать ветку `gh-pages` или `main` в настройках Pages, если вы хотите использовать пользовательскую ветку.
 
-3. Разверни сайт:
+Если всё настроено правильно, ссылка будет вида:
 
-```bash
-npm install
-npm run deploy
-```
-
-4. Ссылка будет вида:
-
-`https://<твое_имя>.github.io/<репозиторий>/`
+`https://oneivan22.github.io/project3/`
 
 ## Страницы
 
-- `/menu` — каталог
+- `/menu` — каталог товаров
+- `/product/:id` — детальная страница товара
 - `/cart` — корзина
 - `/login` — вход/регистрация
 - `/profile` — профиль
-- `/coupons` — промокод `promo10`
+- `/coupons` — промокоды
 
 ## Технологии
 

@@ -1,7 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import { fetchProducts } from '../services/api';
-import { categories } from '../assets/products';
 
 export function useMenuData() {
   const [products, setProducts] = useState([]);

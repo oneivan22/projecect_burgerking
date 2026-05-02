@@ -8,13 +8,6 @@ function delay(ms = 500) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// Функция для имитации случайной ошибки (10% шанс)
-function maybeFail() {
-  if (Math.random() < 0.1) {
-    throw new Error('Ошибка сети. Попробуйте ещё раз.');
-  }
-}
-
 // Получить все товары (как будто с сервера)
 export async function fetchProducts() {
   await delay(800); // Имитируем задержку 800мс

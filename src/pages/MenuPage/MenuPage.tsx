@@ -61,7 +61,7 @@ function MenuPage() {
     }
   }
 
-  /* eslint-disable react-hooks/set-state-in-effect */
+
   useEffect(() => {
     if (!loading && products.length > 0) {
       const firstCat = categories.find(c =>
@@ -74,7 +74,6 @@ function MenuPage() {
       }
     }
   }, [loading, products, queryCategory]);
-  /* eslint-enable react-hooks/set-state-in-effect */
 
   return (
     <main className={styles.menuPage}>
