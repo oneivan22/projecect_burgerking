@@ -7,12 +7,12 @@ import { categories, subCategories } from '../../assets/products';
 import styles from './MenuPage.module.css';
 
 const categoryIcons = {
-  new: '/images/angus-cheddar.png',
-  burgers: '/images/angus-parm.png',
-  rolls: '/images/chicken-roll.png',
-  fries: '/images/king-fries.png',
-  drinks: '/images/evervess-cola.png',
-  sauces: '/images/sauce-bbq.png',
+  new: './images/angus-cheddar.png',
+  burgers: './images/angus-parm.png',
+  rolls: './images/chicken-roll.png',
+  fries: './images/king-fries.png',
+  drinks: './images/evervess-cola.png',
+  sauces: './images/sauce-bbq.png',
 };
 
 function MenuPage() {
@@ -91,7 +91,7 @@ function MenuPage() {
                   onClick={() => scrollToCategory(cat.id)}
                 >
                   <span className={styles.catIcon}>
-                    <img src={categoryIcons[cat.id] || '/images/placeholder.svg'} alt={cat.name} />
+                    <img src={categoryIcons[cat.id] || './images/placeholder.svg'} alt={cat.name} />
                   </span>
                   <span className={styles.catName}>{cat.name}</span>
                 </button>

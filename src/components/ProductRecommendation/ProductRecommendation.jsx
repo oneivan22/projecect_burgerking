@@ -5,9 +5,9 @@ import styles from './ProductRecommendation.module.css';
 function ProductRecommendation({ product, onClose }) {
   const { cartItems, addToCart, updateQuantity } = useContext(CartContext);
   const recommendedProducts = [
-    { id: 1, name: 'Кинг Фри', price: 114.99, image: '/images/king-fries.png' },
-    { id: 10, name: 'Эвервесс Кола', price: 184.99, image: '/images/evervess-cola.png' },
-    { id: 12, name: 'Соус Барбекю', price: 69.99, image: '/images/sauce-bbq.png' },
+    { id: 1, name: 'Кинг Фри', price: 114.99, image: './images/king-fries.png' },
+    { id: 10, name: 'Эвервесс Кола', price: 184.99, image: './images/evervess-cola.png' },
+    { id: 12, name: 'Соус Барбекю', price: 69.99, image: './images/sauce-bbq.png' },
   ];
 
   function handleToggleCart(recProduct) {
