@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './hooks/CartContext';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
